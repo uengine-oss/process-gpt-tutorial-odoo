@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "odoo": {
+      "env": {
+        "ODOO_DB": "<your-odoo-db-name>",
+        "ODOO_URL": "https://<your-instance>.odoo.com",
+        "ODOO_USER": "<your-odoo-login-email>",
+        "ODOO_API_KEY": "<your-odoo-api-key>",
+        "ODOO_YOLO": "true",
+        "ODOO_MCP_ENABLE_METHOD_CALLS": "true"
+      },
+      "args": [
+        "mcp-server-odoo"
+      ],
+      "command": "uvx",
+      "enabled": true,
+      "transport": "stdio"
+    }
+  }
+}

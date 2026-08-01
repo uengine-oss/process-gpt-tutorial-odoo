@@ -23,9 +23,11 @@
 > `docs/demo/`에 있었고, 이후 `docs/tutorials/odoo`에 git submodule로
 > 연결하기 위해 이 저장소(`process-gpt-tutorial-odoo`)로 옮겼습니다. 본문 중
 > "`.claude/skills/odoo-*/`" 같은 경로 언급은 **그 당시의 실행 로그**이니
-> 그대로 두었습니다 — 지금 이 저장소에서는 [`skills/`](skills/) 아래에
-> 있습니다. 직접 써보려면 `skills/odoo-*` 폴더를 여러분 프로젝트의
-> `.claude/skills/`로 복사하면 됩니다.
+> 그대로 두었습니다 — 지금 이 저장소에서는 [`.claude/skills/`](.claude/skills/)
+> 아래에 그대로 있습니다(이 저장소를 단독으로 클론해도 Claude Code가 자동으로
+> 인식하도록 일부러 이 경로에 뒀습니다). 다른 프로젝트에서 쓰려면
+> `.claude/skills/odoo-*` 폴더를 그 프로젝트의 `.claude/skills/`로
+> 복사하면 됩니다.
 
 ---
 
@@ -538,7 +540,8 @@ mcp__odoo__post_message(model="purchase.order", res_id=<새 발주 id>,
 
 | 산출물 | 위치 | 만든 스킬 |
 |---|---|---|
-| 스킬 5개 (SKILL.md) | [`skills/odoo-contact-lookup/`](skills/odoo-contact-lookup/), [`odoo-bulk-partner-import/`](skills/odoo-bulk-partner-import/), [`odoo-purchase-report/`](skills/odoo-purchase-report/), [`odoo-procurement-dashboard/`](skills/odoo-procurement-dashboard/), [`odoo-reorder-request/`](skills/odoo-reorder-request/) (당시엔 `.claude/skills/` 아래, 이 저장소로 이전 후 `skills/` 아래) | (직접 작성 — skill-creator 부재) |
+| 스킬 5개 (SKILL.md) | [`.claude/skills/odoo-contact-lookup/`](.claude/skills/odoo-contact-lookup/), [`odoo-bulk-partner-import/`](.claude/skills/odoo-bulk-partner-import/), [`odoo-purchase-report/`](.claude/skills/odoo-purchase-report/), [`odoo-procurement-dashboard/`](.claude/skills/odoo-procurement-dashboard/), [`odoo-reorder-request/`](.claude/skills/odoo-reorder-request/) | (직접 작성 — skill-creator 부재) |
+| MCP 연결 템플릿 | [`.mcp.json`](.mcp.json) (플레이스홀더만, 실제 키 제외) | — |
 | 발주 현황 보고서 (docx) | [`outputs/purchase-report.docx`](outputs/purchase-report.docx) | odoo-purchase-report → docx |
 | 발주요청서 (docx) | [`outputs/reorder-request.docx`](outputs/reorder-request.docx) | odoo-reorder-request → docx |
 | 조달 현황 대시보드 (Artifact) | https://claude.ai/code/artifact/6ad1355b-024a-447d-b3cf-dca5ba215ae5 | odoo-procurement-dashboard → dataviz + Artifact |
