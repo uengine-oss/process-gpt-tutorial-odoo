@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__odoo__list_models",
+      "mcp__odoo__search_records"
+    ]
+  }
+}
