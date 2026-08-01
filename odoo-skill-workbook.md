@@ -136,7 +136,7 @@ mcp__odoo__search_records(model="res.partner",
 같은 우선순위로 보여주는 스킬을 만들고 싶어. skill-creator를 사용해서
 odoo-contact-lookup 스킬 초안(SKILL.md)을 만들어줘.
 트리거 description에는 "거래처 연락처", "고객 정보 찾아줘", "협력사 연락처" 같은
-학생들이 실제로 쓸 만한 표현을 5개 이상 넣어줘.
+사용자들이 실제로 쓸 만한 표현을 5개 이상 넣어줘.
 ```
 
 예상 SKILL.md 뼈대:
